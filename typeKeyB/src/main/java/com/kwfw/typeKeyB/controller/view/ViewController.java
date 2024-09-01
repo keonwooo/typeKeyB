@@ -13,6 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 @Controller
 public class ViewController {
 	public String homeView(HttpServletRequest request, HttpServletResponse response) throws Exception {
+//		test
 		return "/";
 	}
 }

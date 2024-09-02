@@ -1,1 +1,25 @@
-spring.application.name=typeKeyB
+spring:
+  application:
+    name: typeKeyB
+    
+  #jsp 파싱
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+    
+#mybatis 설정 (MSSQL)
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.220.12:3306/voicerec?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8;
+    username: sa
+    password: poi098)(*
+    
+#spring boot 포트 설정
+server:
+  port: 8080
+  servlet:
+    jsp:
+      init-parameters:
+        #jsp 변경시 자동 적용
+        development: true

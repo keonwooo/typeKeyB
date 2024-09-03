@@ -8,6 +8,7 @@ public class TypeKeyBApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TypeKeyBApplication.class, args);
+//		test
 	}
 
 }
